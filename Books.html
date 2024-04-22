@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body{
+      background-color: ;
+      width: 100%;
+      margin-top: 90px;
+      
+    }
+    header{
+      position: fixed;
+      background: greenyellow;
+      width: 100%;
+      margin: -8px;
+      margin-top: -90px;
+      height: 80px;
+    }
+    header p{
+      display: inline-block;
+      font-size: 3vh;
+      margin-top: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #F624FF;
+      padding: 10px 15px;
+    }
+    logo1{
+      font-size: 4vh;
+    }
+    logo2{
+      
+    }
+    .login{
+      background-color: #0460FF;
+      font-size: 2vh;
+      color: white;
+      padding: 10px 15px;
+      float: right;
+      border-radius: 20px;
+      margin: 8px;
+      margin-top: 18px;
+    }
+    .div1{
+      
+       }
+.img1{
+   width: 70%;
+   margin-left: 12%;
+   border-radius: 10px;
+         
+ }
+ #nav{
+   position: fixed;
+   z-index: 100;
+   background: #20242A;
+   width: 50%;
+   height: 100%;
+   margin: -8px;
+   justify-items: center;
+   visibility: hidden;
+   
+ }
+ #nav a{
+   text-decoration: none;
+   color: #BEC5D3;
+  
+   
+   
+ }
+ #nav .clear{
+   float: right;
+   font-size: 3vh;
+   color: red;
+   margin-top: 0;
+   margin-right: 20px;
+   
+   
+ }
+ .links{
+   text-align: center;
+  justify-content: center;
+  margin-top: 100%;
+  font-size: 3vh;
+ }
+ .form1{
+   position: fixed;
+   width: 100%;
+   text-align: center;
+   height: 100%;
+   background-color: transparent;
+   
+   }
+ .form1 {
+   visibility: hidden;
+   border-radius: 40px;
+   font-size: 3vh;
+   margin-left: 15%;
+   margin-top: 20%;
+   width: 70%;
+   text-align: center;
+   height: 70%;
+   background: linear-gradient(120deg, yellow,pink,yellow)
+   
+ }
+ .form1 input{
+   width: 80%;
+   height: 40px;
+ }
+ 
+ .avatar{
+   width: 150px;
+   height: 120px;
+   border-radius: 50%;
+   margin-top: 10%;
+   margin-left: 20%;
+ }
+ #closelog{
+   float: right;
+   margin: 15px;
+   text-decoration: none;
+
+ }
+ form{
+   font-size: 3vh;
+ }
+ form a{
+   margin-top: 40px;
+   font-size: 20px;
+ }
+ form img{
+   margin-left: 12%;
+   margin-top: 15px;
+   width: 150px;
+   height: 120px;
+   border-radius: 50%;
+ }
+ form p{
+   font-size: 2vh;
+ }
+ form input {
+   border-radius: 10px;
+ }
+ #x{
+   float: right;
+   font-size: 4vh;
+   margin: 10px;
+ }
+ #finish{
+   
+   font-size: 2vh;
+   color: white;
+   padding: 10px 15px;
+   
+   border-radius: 10px;
+   margin: 8px;
+   margin-top: 18px;
+   display: inline;
+ }
+ .disconfirm{
+   background-color: red;
+ }
+ .confirm{
+ background-color: #0460FF;  
+ }
+ 
+ .grid img{
+   text-align: center;
+   padding: 14px;
+   justify-content: center;
+   width: 80px;
+   height: 80px;
+ }
+ .grid p{
+   margin-left: 2px;
+   font-size: 1.7vh;
+   text-align: center;
+   max-width: 90px;
+   border: 5px solid #E3FFEB;
+   
+   margin-top: 0px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 500;
+ }
+ .head{
+   font-size: 4vh;
+   color: #F89716;
+   font-weight: 600;
+   -webkit-text-stroke: 2px red;
+   text-shadow: 5px 5px 10px black;
+ }
+ .contain{
+   border: 5px solid green;
+   width: 100px;
+   border-radius: 15px;
+   margin: 3px;
+ }
+ .grid, .contain{
+   
+   display: inline-block;
+ }
+ .div1{
+   margin-left: 5.5%;
+ }
+ 
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <p class="logo1" onclick="openNav()">&#9776;</p>
+    <p class="logo2">Book store</p>
+    <button class="login" onclick="openlog()">Login</button>
+    
+  </header>
+  <div id="nav" >
+    <p class="clear" onclick="closeNav()" id="closeNav">&times</p>
+    
+    <div class="links">
+    <a href="Home.html">Home</a><br>
+    <a href="Books.html">Books</a><br>
+    <a href="Apps.html">Apps</a><br>
+    <a href="Websites.html">Websites</a><br>
+    <a href="About us.html">About as</a><br>
+ 
+    </div>
+    
+    
+     </div>
+     <div>
+       <div id="form" class="form1">
+         <form>
+           <p href="#" onclick="closelog()" id="x">&times;</p>
+         <img src="alex4.jpg" alt="avatar">
+         <p>Email</p>
+         <input type="text" placeholder="type Email...">
+         <p>password</p>
+         <input type="text" name="" id="" placeholder="type password..."><br>
+         <a href="#">forget password</a>
+         <button class="disconfirm" id="finish">cancel</button>
+         <button class="confirm" id="finish">login</button>
+         </form>
+       </div>
+     </div>
+
+  <div class="div1">
+    <div>
+      <p class="head">Educational</p>
+
+      <a href="G9-Biology-STB-2023-web.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br> Biology</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="G9-Chemistry-STB-2023-web.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br> Chemistry</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="G9-Citizenship-STB-2023-web(1).pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br> citizenship</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="G9-Economics-STB-2023-web.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br>Economics</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="G9-Geography-STB-2023-web.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br>Geography</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="G9-History-STB-2023-web.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br>History</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="G9-HPE-STB-2023-web.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br>HPE</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="G9-IT-STB-2023-web.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br>IT</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="G9-Mathematics-STB-2023-web.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br>Maths</p>
+          </div>
+              
+    </div>
+    </a>
+            
+    </div>
+    </a>
+        <a href="G9-Physics-STB-2023-web.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>G9 <br>Physics</p>
+          </div>
+              
+    </div>
+    </a>
+            
+    </div>
+    </a>
+  
+    
+         
+         </div>
+         </div>
+              
+ <div class="div1">
+    <div>
+      <p class="head">Fictions</p>
+
+      <a href="ራስን የመለወጥ ሚስጥር.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>ራስን <br>የመለወጥ ሚስጥር</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ቅሌት.PDF.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ቅሌት</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ቀልዶች.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ቀልዶች</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ዴርቶጋዳ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ዴርቶጋዳ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ጅዳ ነኝ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ጅዳ ነኝ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ብርቅርቅታ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ብርቅርቅታ <br></p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="እናት ሶስና.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>እናት ሶስና <br></p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="እንስሳዊነት.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>እንስሳዊነት</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የሳቅ ምንጭ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>የሳቅ <br>ምንጭ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="በድሉ ዋቅጂራ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>በድሉ <br>ዋቅጂራ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ታላላቅ ሰዎች.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ታላላቅ ሰዎች</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ውሾች ከበቡኝ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ውሾች ከበቡኝ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የዳቪንቺ ኮድ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የዳቪንቺ ኮድ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="Tsiwa Haw.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ፅዋ ሓው</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ሀኪም በሌለበት.PDF"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ሀኪም በሌለበት</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="መለስ በሰማያት.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>መለስ በሰማያት</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="እንቅልፍ ለምኔ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>እንቅልፍ ለምኔ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ከኣሜን ባሻገር.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ከኣሜን ባሻገር</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የመልስ ኣምልኮ.PDF"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የመልስ ኣምልኮ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የተራራው ስብከት.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የተራራው ስብከት</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ያልተኖረ ልጅነት.PDF.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ያልተኖረ ልጅነት</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የ ጉለሌው ሰካራም.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የጉለሌው ሰካራም</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የ ፍልስፍና እይታ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የፍልስፍና እይታ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ለአሸናፊነት መገዛት.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>ለአሸናፊነት <br> መገዛት</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ታሪክና ምሳሌ (1).pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ታሪክና ምሳሌ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ኦሮማይ በዓሉ ግርማ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>ኦሮማይ <br> በዓሉ ግርማ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የዘረኝነት ኣውራቂስ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>የዘረኝነት <br> ኣውራቂስ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ሸበጥ - ብርሃን ዳኜ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ሸበጥ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ትዝታ-ሀዱስ አለማየሁ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ትዝታ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="እምጓ(ዓለማየሁ ዋሴ).pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>እምጓ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ከውሸት ፍቅር ይጠበቁ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>ከውሸት <br> ፍቅር ይጠበቁ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ከ ፃዕረ ሞት ትንቅንቅ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>ከፃዕረ ሞት <br> ትንቅንቅ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ዮቶር (ኮብላይ ካህን).pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ዮቶር</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ገመና በ ሰሎሞን ሹምየ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ገመና</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ቀልዶች ከጋብሮቮች ምድር.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>ቀልዶች <br> ከጋብሮቮች</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የልምዣት-ሀዲስ አለማየሁ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የልምዣት</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ዮራቶራድ ይስማዕከ ወርቁ.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ዮራቶራድ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የህሊና ደውል-በአሉ ግርማ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የህሊና ደውል</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="በሙት መንፈስ ኣገር ሲታመስ.PDF"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>በሙት መንፈስ <br> ኣገር ሲታመስ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ከአድማስ ባሻገር በዓሉ ግርማ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ከአድማስ ባሻገር</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የወንድ፡ምጥ(ይስማዕከ ወርቁ).pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የወንድ ምጥ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="ሰበዝ ከ ዓለምኣየሁ ዋሴ እሸቱ.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>ሰበዝ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የትንቢት ቀጠሮ፤ ከበድ ሚካኤል.pdf"><div class="contain">
+      <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>የትንቢት ቀጠሮ</p>
+          </div>
+              
+    </div>
+    </a>
+    <a href="የ ስነልቦና ኣገልግሎት ለወጣቶች.pdf"><div class="contain">
+          <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p>የስነልቦና <br>ኣገልግሎት</p>
+          </div>
+              
+    </div>
+    
+    </a>
+    <a href="አለቃ ገብረሃና በ አረፋይኔ ሐጎስ.pdf">
+      <div class="contain">
+        <div class="grid">
+          <img src="alex4.jpg" alt="">
+          <p><br>አለቃ ገብረሃና</p>
+        </div>
+    
+      </div>
+  </a>
+  <a href="መፅሃፍ ቅዱስ እና የ ሕክምና ሳይንስ.pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p>መፅሃፍ ቅዱስ <br>ሕክምና ሳይንስ</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="ኩላ_ነንፃሕላ_ግጥምታት_ኣዴራ_ተስፋይ.pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p><br>ኩላ_ነንፃሕላ</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="5 6 7~ከ ስብሐት ገብረእዝጊኣብሄር~.pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p><br>5 6 7</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="ሜሎስ ይስማዕከ ወርቁ[@BookAlem].pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p><br>ሜሎስ</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="የ ገፀባህርያት ኣሳሳል በየጠፍ ኮኮቦች.pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p>የገፀባህርያት <br> ኣሳሳል</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="የስደተኛው ማስታወሻ(ተስፋየ ገብረአብ).pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p>የስደተኛው <br> ማስታወሻ</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="የጋዜጠኛው ማስታወሻ(ተስፋየ ገብረአብ).pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p>የጋዜጠኛው <br> ማስታወሻ</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="ሰባተኛው መልአክ~ከ ስብሐት ገብረእዝጊኣብሄር~.pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p>ሰባተኛው <br> መልአክ</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="ወዳጄ ልቤና ሌሎችም ብላቴንጌታ ኅሩይ ወልደ ሥላሴ.pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p>ወዳጄ ልቤና <br> ሌሎችም </p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="አንጋረ_ፈላስፋ_የፈላስፎች_አነጋገር_ከሊቀ_መዘምራን.pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p><br>አንጋረ</p>
+      </div>
+  
+    </div>
+    </a>
+   <a href="ግብረሰዶማዊነትና የሴቶች ክህነት በቤተክርስቲያን ዕይታ.pdf">
+    <div class="contain">
+      <div class="grid">
+        <img src="alex4.jpg" alt="">
+        <p>ግብረሰዶምና <br> የሴቶች ክህነት</p>
+      </div>
+  
+    </div>
+    </a>
+  <p style="font-size: 25px; color: green;  ">To days best music</p>
+<iframe src="alex.mp4" style="width: 100%; height: 250px; margin-left: -20px;" frameborder="0"></iframe>         
+         </div>
+         </div>
+    
+         
+              
+ 
+  
+        
+    
+ 
+     
+<script>
+  function openNav(){
+    document.getElementById("nav").style.visibility = "visible";
+  }
+  function closeNav() {
+    document.getElementById("nav").style.visibility = "hidden";
+  }
+  function openlog(){
+    document.getElementById("form").style.visibility = "visible";
+  }
+  function closelog() {
+    document.getElementById("form").style.visibility = "hidden";
+  }
+  
+</script>
+</body>
+
+</html>
